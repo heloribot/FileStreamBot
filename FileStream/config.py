@@ -17,7 +17,7 @@ class Telegram:
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))
     IMAGE_FILEID = env.get('IMAGE_FILEID', "https://graph.org/file/5211bace47817519f6772.jpg")
     MULTI_CLIENT = False
-    LOG_CHANNEL = int(env.get("BIN_CHANNEL", None))  # you NEED to use a CHANNEL when you're using MULTI_CLIENT
+    LOG_CHANNEL = int(env.get("LOG_CHANNEL", None))  # you NEED to use a CHANNEL when you're using MULTI_CLIENT
     MODE = env.get("MODE", "primary")
     SECONDARY = True if MODE.lower() == "secondary" else False
     AUTH_USERS = list(set(int(x) for x in str(env.get("AUTH_USERS", "")).split()))
