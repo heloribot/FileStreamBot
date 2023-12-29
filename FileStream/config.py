@@ -7,15 +7,15 @@ class Telegram:
     API_ID = int(env.get("API_ID"))
     API_HASH = str(env.get("API_HASH"))
     BOT_TOKEN = str(env.get("BOT_TOKEN"))
-    OWNER_ID = int(env.get('OWNER_ID', '7978482443'))
+    OWNER_ID = int(env.get('OWNER_ID', '6112399514'))
     WORKERS = int(env.get("WORKERS", "6"))  # 6 workers = 6 commands at once
     DATABASE_URL = str(env.get('DATABASE_URL'))
-    UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "Telegram"))
-    SESSION_NAME = str(env.get('SESSION_NAME', 'FileStream'))
-    FORCE_UPDATES_CHANNEL = env.get('FORCE_UPDATES_CHANNEL', False)
+    UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "Call_me_futurepilot"))
+    SESSION_NAME = str(env.get('SESSION_NAME', 'Mahsoom'))
+    FORCE_UPDATES_CHANNEL = env.get('FORCE_UPDATES_CHANNEL', True)
     FORCE_UPDATES_CHANNEL = True if str(FORCE_UPDATES_CHANNEL).lower() == "true" else False
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))
-    IMAGE_FILEID = env.get('IMAGE_FILEID', "https://telegra.ph/file/5bb9935be0229adf98b73.jpg")
+    IMAGE_FILEID = env.get('IMAGE_FILEID', "https://graph.org/file/5211bace47817519f6772.jpg")
     MULTI_CLIENT = False
     LOG_CHANNEL = int(
         env.get("BIN_CHANNEL", None)
